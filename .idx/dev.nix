@@ -19,13 +19,14 @@
     pkgs.nodejs_20 
     pkgs.vite
   ];
-
+  
+  
   # Enable web previews and specify the command
   idx.previews = {
     enable = true;
     previews = {
       web = {
-        command = [ "npm" "run" "dev" ]; # Assuming you're using npm for your Vite project
+        command = [ "docker" "run" "-d" "-p" "14499:80" "ghcr.io/mutinywallet/mutiny-web:latest" ]; # Assuming you're using npm for your Vite project
         manager = "web"; 
       };
     };
