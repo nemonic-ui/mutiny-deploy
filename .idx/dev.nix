@@ -18,6 +18,10 @@
     pkgs.docker 
     pkgs.nodejs_20 
     pkgs.vite
+    pkgs.netcat
+    pkgs.websocat
+    pkgs.cargo
+    
   ];
   
   
